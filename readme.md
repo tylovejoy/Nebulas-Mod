@@ -37,6 +37,7 @@ The effect in the third slot is set as the Second effect to be collected.
 
 ## STEP TWO:
 Paste the entire "Checkpoint Finder System.txt" into your live map.  
+Press the button for the "Hello!" voiceline to initialize the array.
 This allows you to mark the checkpoint you are currently standing on by pressing the button for Ultimate Status (2 Orbs) or Reload (3 Orbs).  
 A small message will appear on screen that the checkpoint has been set to True.  
 If you accidentally mark a checkpoint, press the same button again and a message will appear on screen saying the checkpoint has been set to False.

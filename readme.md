@@ -10,9 +10,17 @@ Variables and subroutines in the workshop are numbered, check that the NEW varia
 
 ## NEW VARIABLES/SUBROUTINES:
 ```
+variables
+{
+	global:
+		110: CParrayCreated
+		111: CParray3orb
+		112: CParray2orb
+
+}
 subroutines
 {
-	70: TCDtextMOD
+	110: TCDtextMOD
 }
 ```
 
@@ -28,59 +36,22 @@ The effect in the third slot is set as the Second effect to be collected.
 
 
 ## STEP TWO:
-Paste the "Checkpoint # Finder" rule into your live map.  
-This allows you to view what checkpoint you are currently standing on by pressing your interact key.  
-Find the checkpoints that require this mod, and record their Checkpoint Number. Be sure to keep a seperate list of CPs involving 2 vs 3 orbs.  
+Paste the entire "Checkpoint Finder System.txt" into your live map.  
+This allows you to mark the checkpoint you are currently standing on by pressing the button for Ultimate Status (2 Orbs) or Reload (3 Orbs).  
+A small message will appear on screen that the checkpoint has been set to True.  
+If you accidentally mark a checkpoint, press the same button again and a message will appear on screen saying the checkpoint has been set to False.
+You are unable to set a single checkpoint to both 3 Orb and 2 Orb.
+Find the checkpoints that require this mod, mark them accordingly, and then DISABLE these rules!  
+**Now save your map!!!**
 
 
 ## STEP THREE:
-
-Replace "CP#X" in the conditions below with the relevent CP numbers. Be sure to place the CP Number in the Rule corresponding to the correct number of orbs.
-
-The || operator denotes an OR statement, and is used to delimit multiple checkpoints. Remove them if there is only one checkpoint this rule will be used for.
-Feel free to add as many || statements and checkpoints as needed.
-
-If you are NOT using one of the two orb rules, disable it in the workshop editor after you've completed step four (eg. If you have no CPs with 3 ordered orbs, then disable the 3 Orb Force Order rule).
-
-The Conditions for TCDdetect Modded line requires the CP Numbers for all CPs involving ordered effects.
-
-
-### Conditions for 2 Orb Force Order rule - Insert CP Numbers With 2 Orbs Here
-```
-{
-	Event Player.Checkpoint == (CP#1 || CP#2 || CP#3);
-}
-```
-### Conditions for 3 Orb Force Order rule - Insert CP Numbers With 3 Orbs Here
-```
-{
-	Event Player.Checkpoint == (CP#4 || CP#5 || CP#6);
-}
-```
-### Conditions for TCDdetect Modded rule - Insert CP Numbers Of All CPs With Ordered Orbs
-```
-{
-	Event Player.Checkpoint != (CP#1 || CP#2 || CP#3 || CP#4 || CP#5 || CP#6);
-}
-```
-Select the whole line between the curly braces (not including them) and replace the line corresponding rule in the Nebulas Mod.txt file that says:
-> "### REMOVE THIS LINE AND REPLACE WITH MODIFIED CONDITION FROM README.TXT ###"
-
-There are THREE INSTANCES of this, replace them all or you will get an error! 
-
-## STEP FOUR:
-Disable the following rules (don't delete, save for backup): TCPdetect, and TCD Initiate Sub
-
+Disable the following rules (don't delete, save for backup): TCPdetect, and TCD Initiate Sub  
 Copy and paste the entirety of "Nebulas Mod.txt" into your live map.
 
 
-
-
-
-## TODO:
-Fix line numbers in readme
-additional conditions needed to be pasted in TCDtextMOD sub rule
-
 ## KNOWN BUGS:
 Ability symbols stay appearing after level has finished when ability orbs were used on the last checkpoint.
+
+
 

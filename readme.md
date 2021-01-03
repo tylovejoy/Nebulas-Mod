@@ -18,14 +18,19 @@ I recommend using Notepad++ as your text editor!
 
 ## STEP ONE: 
 Create your CP in the Hax framework. The mod assigns the order of the orbs at CP creation, so pay attention to the order that you place the effects! 
+
 The effect in the first slot is set as the First effect to be collected.
+
 The effect that is placed in the second slot is set as the Last effect to be collected.
+
 The effect in the third slot is set as the Second effect to be collected.
 
 
 ## STEP TWO:
 Paste the "Checkpoint # Finder" rule into your live map.
+
 This allows you to view what checkpoint you are currently standing on by pressing your interact key. 
+
 Find the checkpoints that require this mod, and record their Checkpoint Number. Be sure to keep a seperate list of CPs involving 2 vs 3 orbs.
 
 
@@ -65,7 +70,8 @@ Select the whole line between the curly braces (not including them) and replace 
 There are THREE INSTANCES of this, replace them all or you will get an error! 
 
 ## STEP FOUR:
-Disable the following rules (don't delete, save for backup): TCPdetect, and TCD Initiate Sub 
+Disable the following rules (don't delete, save for backup): TCPdetect, and TCD Initiate Sub
+
 Copy and paste the entirety of "Nebulas Mod.txt" into your live map.
 
 

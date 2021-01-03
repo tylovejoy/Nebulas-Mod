@@ -60,7 +60,7 @@ The Conditions for TCDdetect Modded line requires the CP Numbers for all CPs inv
 }
 ```
 Select the whole line between the curly braces (not including them) and replace the line corresponding rule in the Nebulas Mod.txt file that says:
-> ### REMOVE THIS LINE AND REPLACE WITH MODIFIED CONDITION FROM README.TXT ###
+> "### REMOVE THIS LINE AND REPLACE WITH MODIFIED CONDITION FROM README.TXT ###"
 
 There are THREE INSTANCES of this, replace them all or you will get an error! 
 

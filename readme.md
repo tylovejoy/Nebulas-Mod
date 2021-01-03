@@ -60,12 +60,11 @@ The Conditions for TCDdetect Modded line requires the CP Numbers for all CPs inv
 }
 ```
 Select the whole line between the curly braces (not including them) and replace the line corresponding rule in the Nebulas Mod.txt file that says:
-"################ REMOVE THIS LINE AND REPLACE WITH MODIFIED CONDITION FROM README.TXT ################"
+> ### REMOVE THIS LINE AND REPLACE WITH MODIFIED CONDITION FROM README.TXT ###
 
-There are THREE INSTANCES of this, replace them all or you will get an error! They are on lines numbered 38, 107, 181. (You can see line numbers if using Notepad++ as your editor!)##################################################################################################################skjghsdojklgbsdfjkougbsdlkfjgbsdlfkjgsbd;fkljghbsdjklfgbsldfjhkgb fix this
+There are THREE INSTANCES of this, replace them all or you will get an error! 
 
-
-STEP FOUR:
+## STEP FOUR:
 Disable the following rules (don't delete, save for backup): TCPdetect, and TCD Initiate Sub 
 Copy and paste the entirety of "Nebulas Mod.txt" into your live map.
 
@@ -73,10 +72,10 @@ Copy and paste the entirety of "Nebulas Mod.txt" into your live map.
 
 
 
-TODO:
+## TODO:
 Fix line numbers in readme
 additional conditions needed to be pasted in TCDtextMOD sub rule
 
-KNOWN BUGS:
+## KNOWN BUGS:
 Ability symbols stay appearing after level has finished when ability orbs were used on the last checkpoint.
 
